@@ -1,3 +1,5 @@
+import Final4 from "./Final4"
+
 const Elite8 = (props) => {
   return (
     < >
@@ -16,6 +18,7 @@ const Elite8 = (props) => {
           {props.teams[6].seed}. {props.teams[6].name} vs. {props.teams[7].seed}. {props.teams[7].name}
         </li>
       </ul>
+      <div><Final4 teams={props.teams}/></div>
     </>
   )
 }
