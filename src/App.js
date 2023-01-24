@@ -1,5 +1,6 @@
 import './App.css';
 import Teams from './Teams';
+import Elite8 from './Elite8';
 
 function App() {
   const teams = [
@@ -53,9 +54,10 @@ function App() {
     }
   ]
   return (
-    <div className="App">
-      <Teams teams={teams}/>
-    </div>
+    < >
+      <div><Teams teams={teams}/></div>
+      <div><Elite8 teams={teams}/></div>
+    </>
   )
 }
 
