@@ -1,25 +1,62 @@
-import logo from './logo.svg';
 import './App.css';
+import Teams from './Teams';
 
 function App() {
+  const teams = [
+    {
+      name: 'Saint Peters',
+      seed: 15,
+      conference: 'MAAC',
+      blueBlood: false
+    },
+    {
+      name: 'North Carolina',
+      seed: 8,
+      conference: 'ACC',
+      blueBlood: true
+    },
+    {
+      name: 'Miami',
+      seed: 10,
+      conference: 'ACC',
+      blueBlood: false
+    },
+    {
+      name: 'Kansas',
+      seed: 1,
+      conference: 'BIG 12',
+      blueBlood: true
+    },
+    {
+      name: 'Arkansas',
+      seed: 4,
+      conference: 'SEC',
+      blueBlood: false
+    },
+    {
+      name: 'Duke',
+      seed: 2,
+      conference: 'ACC',
+      blueBlood: true
+    },
+    {
+      name: 'Houston',
+      seed: 5,
+      conference: 'AAC',
+      blueBlood: false
+    },
+    {
+      name: 'Villanova',
+      seed: 2,
+      conference: 'Big East',
+      blueBlood: false
+    }
+  ]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Teams teams={teams}/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
