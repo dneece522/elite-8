@@ -1,4 +1,4 @@
-
+import Championship from "./Championship"
 
 const Final4 = (props) => {
   return (
@@ -12,6 +12,7 @@ const Final4 = (props) => {
           {props.teams[3].seed}. {props.teams[3].name} vs. {props.teams[7].seed}. {props.teams[7].name}
         </li>
       </ul>
+      <div><Championship teams={props.teams}/></div>
     </>
   )
 }
